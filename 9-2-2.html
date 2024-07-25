@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      class Rectangle {
+        constructor(width, height) {
+          this.width = width;
+          this.height = height;
+        }
+
+        getParimeter() {
+          return 2 * (this.width + this.height);
+        }
+
+        getArea() {
+          return this.width * this.height;
+        }
+      }
+
+      class Square {
+        constructor(length) {
+          this.length = length;
+        }
+
+        getParimeter() {
+          return 4 * this.length;
+        }
+
+        getArea() {
+          return this.length * this.length;
+        }
+      }
+      const rectangle = new Rectangle(505, 505);
+      const square = new Square(76.8);
+      console.log(`직사각형의 둘레 : ${rectangle.getParimeter()}`);
+      console.log(`직사각형의 넓이 : ${rectangle.getArea()}`);
+      console.log(`정사각형의 둘레 : ${square.getParimeter()}`);
+      console.log(`정사각형의 넓이 : ${square.getArea()}`);
+    </script>
+  </head>
+  <body></body>
+</html>
